@@ -53,3 +53,14 @@ const port = process.env.PORT || 8080
 app.listen(port, (req, res) => {
     console.log('Listening to the port 8080');
 })
+
+
+setInterval(() => {
+    axios.get('https://cloudb.onrender.com/')
+        .then(response => {
+            console.log('Pinged backend to keep it alive.');
+        })
+        .catch(error => {
+            console.error('Error pinging backend:', error);
+        });
+}, 2 * 60 * 1000);
