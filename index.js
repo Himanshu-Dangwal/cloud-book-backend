@@ -4,6 +4,7 @@ if(process.env.NODE_ENV !== 'production'){
 const express = require("express");
 const mongoose = require('mongoose');
 const cors = require('cors')
+const axios = require("axios")
 
 const authRoute = require('./routes/auth')
 const notesRoute = require('./routes/notes')
