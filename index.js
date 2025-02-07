@@ -56,12 +56,12 @@ app.listen(port, (req, res) => {
 })
 
 
-setInterval(() => {
-    axios.get('https://cloudb.onrender.com/')
-        .then(response => {
-            console.log('Pinged backend to keep it alive.');
-        })
-        .catch(error => {
-            console.error('Error pinging backend:', error);
-        });
-}, 2 * 60 * 1000);
+// setInterval(() => {
+//     axios.get('https://cloudb.onrender.com/')
+//         .then(response => {
+//             console.log('Pinged backend to keep it alive.');
+//         })
+//         .catch(error => {
+//             console.error('Error pinging backend:', error);
+//         });
+// }, 2 * 60 * 1000);
